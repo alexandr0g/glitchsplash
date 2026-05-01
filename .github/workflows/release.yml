@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: cd glitchsplash && zip -r ../glitchsplash.zip .
+      - run: zip -r glitchsplash.zip glitchsplash/
       - uses: softprops/action-gh-release@v2
         with:
           files: glitchsplash.zip
